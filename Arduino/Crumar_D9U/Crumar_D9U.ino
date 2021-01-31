@@ -49,8 +49,8 @@ USBMIDI_CREATE_INSTANCE(0,MIDIUSB); // USB MIDI
 MIDI_CREATE_INSTANCE(HardwareSerial, Serial1, MIDIOUT); // serial MIDI-output
 
 // --- Define global modes
-#define DEBOUNCE 50
-#define RESEND_TIME 100
+#define DEBOUNCE    50
+#define RESEND_TIME 50
 #define DEADBAND    8
 
 // --- Init global variables
@@ -197,7 +197,6 @@ void OnControlChange(byte channel, byte control, byte value) {
 		}
 	}
 }
-// ===========================================================
 
 // The setup routine runs once when you press reset:
 void setup()  {  
@@ -235,9 +234,9 @@ void loop()
   unsigned long now = millis();
   if ( (now-sx_time)>RESEND_TIME ) {         
     if (resend[sx_mode]) {
-      SendDbSysex(sx_mode); //Send Sysex  
+      SendDbSysex(sx_mode); //Send Sysex 
+      sx_time=now;
     }
-    sx_time=now;
     sx_mode = !sx_mode; // 
   }
 }
