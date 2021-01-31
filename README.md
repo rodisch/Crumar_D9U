@@ -4,6 +4,9 @@ This is a firmware extension for the Crumar-D9U controller (https://www.crumar.i
 
 In addition, the features of the original D9U firmware are maintained. During compilation it can be selected, if CCs and sysex go to USB or serial MIDI-output, see 'what goes where' in source code. Default configuration is sysex to serial output and CCs to USB. This way you can connect to the FA-06/07/08 via serial/DIN MIDI and connect to DAW-/VST etc. via USB at the same time.
 
+### Updates
+- Feb.-2021: Incoming MIDI-CCs are converted into sysex.
+
 ## Libraries
 
 These libraries must be installed via the library manager of Arduino:
