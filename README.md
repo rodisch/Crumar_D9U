@@ -1,10 +1,8 @@
-# RoDi_D9U
+# Crumar_D9U sysex extension for Roland FA-06/07/08
 
-## A drawbar controller for the Roland FA-06/07/08
+This is a firmware extension for the Crumar-D9U controller (https://www.crumar.it/?a=page&p=D9U)  to control the SuperNatural drawbar organ of a Roland FA-06/07/08. The firmware sends sysex messages to part 1 and part 2 of the FA's current studioset. Switching between the parts is done via the mode button at the back of the D9U-device.
 
-This is a firmware extension for the GMLAB-D9U hardware to control the SuperNatural drawbar organ of a Roland FA-06/07/08. The firmware sends sysex messages to part 1 and part 2 of the current studioset of the FA. Switching between the parts is done via the mode button at the back of the D9U-device.
-
-In addition the features of the original D9U firmware are maintained. During compilation it can be selected, if CCs and sysex go to USB or serial MIDI-output, see 'what goes where' in source code. Default configuration is sysex to serial output to connect to the FA-06/07/08 and CCs to USB for DAW-/VST controls.
+In addition, the features of the original D9U firmware are maintained. During compilation it can be selected, if CCs and sysex go to USB or serial MIDI-output, see 'what goes where' in source code. Default configuration is sysex to serial output and CCs to USB. This way you can connect to the FA-06/07/08 via serial/DIN MIDI and connect to DAW-/VST etc. via USB at the same time.
 
 ## Libraries
 
